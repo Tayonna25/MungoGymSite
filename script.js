@@ -1,5 +1,10 @@
-// Script for handling the CTA button click event
-
-document.getElementById('cta-button').addEventListener('click', function() {
-    alert('Get started with ApexPer4manceTraining today!');
+// Example of smooth scroll functionality for links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
