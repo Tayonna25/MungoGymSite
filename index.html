@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apex Performance Training</title>
+  <!-- Link to the CSS file -->
   <link rel="stylesheet" href="styles.css">
+  <!-- JS File -->
   <script defer src="script.js"></script>
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header Section -->
   <header class="header">
     <div class="logo">
       <img src="images/logo.png" alt="Apex Performance Logo">
@@ -22,6 +26,7 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
       <h1>Crafting Confidence<br>One Chiseled Body at a Time</h1>
@@ -30,6 +35,7 @@
     </div>
   </section>
 
+  <!-- Information Section -->
   <section class="fade-scroll info-section">
     <div class="container">
       <h2>Why Choose Apex?</h2>
@@ -37,12 +43,13 @@
     </div>
   </section>
 
+  <!-- Footer Section -->
   <footer class="footer">
     <p>&copy; 2025 Apex Performance Training. All rights reserved.</p>
   </footer>
 
+  <!-- JavaScript -->
   <script>
-    // Wait for DOM to load before executing script
     document.addEventListener('DOMContentLoaded', function() {
       // Smooth scroll
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -83,9 +90,8 @@
         });
       });
 
-      // Scroll-based fade in for sections
+      // Scroll-based fade-in for sections
       const faders = document.querySelectorAll('.fade-scroll');
-
       const appearOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px"
