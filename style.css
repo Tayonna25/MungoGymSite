@@ -127,3 +127,35 @@ body {
     color: #eee;
     font-size: 0.9rem;
 }
+.services-container {
+    padding: 6rem 2rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .services-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #111;
+    text-align: center;
+  }
+  
+  .service-item {
+    margin-bottom: 2rem;
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .service-item h3 {
+    font-size: 1.5rem;
+    color: #c42020;
+    margin-bottom: 1rem;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
