@@ -1,49 +1,90 @@
-<section id="services">
-    <header class="header">
-      <div class="logo">
-        <img src="images/logo.png" alt="Apex Performance Logo">
-      </div>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-  
-    <div class="services-container fade-scroll">
-      <h1 class="services-title">Our Services</h1>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Apex Performance</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Apex Performance Logo">
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="services" class="fade-scroll info-section">
+    <div class="container">
+      <h1>Our Services</h1>
+
       <div class="service-item">
         <h3>General Fitness</h3>
-        <p>Individualized training structured to your personal goals and needs. Perfect for beginners to elite athletes, this includes nutritional guidance and targets functional training, mobility, fat loss, and muscle gain. (Includes monthly body fat %, weekly check-ins, and ongoing evaluation.)</p>
+        <p>Individualized training sessions structured to your personal goals and needs. Perfect for beginners to elite athletes. Includes functional training, mobility, fat loss, muscle gain, monthly body fat %, weekly check-ins, and consistent reevaluations. Nutritional guidance provided to support a healthy lifestyle.</p>
       </div>
-  
+
       <div class="service-item">
         <h3>Sports Performance Training</h3>
-        <p>Designed for collegiate and professional athletes aiming to reach peak performance. Fully customized plans aligned with individual athletic goals for strength, speed, and conditioning optimization.</p>
+        <p>Designed for current collegiate and professional athletes. Customized to meet individual performance goals and maximize strength, speed, and recovery.</p>
       </div>
-  
+
       <div class="service-item">
         <h3>Athletic Team Training</h3>
-        <p>Off-season or in-season sport-specific training tailored to your team. Focuses include strength & conditioning, speed, agility, quickness (SAQ), and mobility to boost team performance.</p>
+        <p>Team-based sessions tailored for off-season or in-season athletes. Focus on strength & conditioning, speed/agility/quickness (SAQ), and mobility work.</p>
       </div>
-  
+
       <div class="service-item">
-        <h3>12-Week Training Program</h3>
-        <p>A structured 3–4 day/week functional strength training plan with weekly mobility drills. Designed to guide you toward transformation in just 12 weeks. Includes weekly check-ins to track progress.</p>
+        <h3>12 Week Training Program</h3>
+        <p>A structured 12-week plan that includes 3–4 day strength training, weekly mobility exercises, and check-ins to help you hit your transformation goals.</p>
       </div>
-  
+
       <div class="service-item">
         <h3>Meal Plan</h3>
-        <p>Mix-and-match recipes with over 100+ possible combinations. Includes 15 meals per bundle with supplement suggestions, target macronutrients, and daily caloric intake goals for optimal results.</p>
+        <p>Enjoy 15 mix-and-match meals with endless variety. Includes supplement recommendations, macronutrient targets, and daily caloric intake goals—making meal prep simple and effective.</p>
       </div>
-  
+
       <div class="service-item">
-        <h3>Body Composition Analysis</h3>
-        <p>Comprehensive body assessment to measure progress and guide your fitness strategy. Understand your body fat %, muscle mass, and more with our performance analysis tools.</p>
+        <h3>Body Composition Analysis Assessment</h3>
+        <p>Track progress with in-depth body fat %, muscle mass, and performance metrics to fine-tune your training and nutrition for optimal results.</p>
       </div>
     </div>
   </section>
-  
+
+  <footer class="footer">
+    <p>&copy; 2025 Apex Performance Training. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const faders = document.querySelectorAll('.fade-scroll');
+      const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+
+      window.addEventListener('scroll', () => {
+        document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 50);
+      });
+    });
+  </script>
+</body>
+</html>
