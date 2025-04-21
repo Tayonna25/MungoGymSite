@@ -273,17 +273,13 @@ body {
 .contact-section {
     padding: 8rem 2rem 4rem;
     background-color: #111;
-    color: white;
+    color: black;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Change the background color of the contact section */
-.contact-section {
-    background-color: #222; /* Darker background to contrast with white text */
-}
 .contact-container h1 {
     color: #f7d0d2; /* Soft red color for the heading */
 }
