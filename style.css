@@ -280,6 +280,25 @@ body {
     align-items: center;
 }
 
+/* Change the background color of the contact section */
+.contact-section {
+    background-color: #222; /* Darker background to contrast with white text */
+}
+.contact-container h1 {
+    color: #f7d0d2; /* Soft red color for the heading */
+}
+
+.contact-container p {
+    color: #ccc; /* Light gray color for the paragraph */
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block; /* Ensure the form elements are visible */
+    visibility: visible; /* Ensure they are not hidden */
+}
+
+
 .contact-container {
     max-width: 600px;
     width: 100%;
