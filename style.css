@@ -280,14 +280,6 @@ body {
     align-items: center;
 }
 
-.contact-container h1 {
-    color: #f7d0d2; /* Soft red color for the heading */
-}
-
-.contact-container p {
-    color: #ccc; /* Light gray color for the paragraph */
-}
-
 .contact-form input,
 .contact-form textarea {
     display: block; /* Ensure the form elements are visible */
