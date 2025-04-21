@@ -291,16 +291,15 @@ body {
     line-height: 1.6;
   }
   /* Contact Section */
-.contact-section {
+  .contact-section {
     padding: 8rem 2rem 4rem;
     background-color: #111;
-    color: black;
+    color: white; /* ✅ Set text color to white */
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .contact-form input,
 .contact-form textarea {
     display: block; /* Ensure the form elements are visible */
