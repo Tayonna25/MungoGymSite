@@ -291,6 +291,10 @@ body {
     line-height: 1.6;
   }
   /* Contact Section */
+  .contact {
+    background-color: white;
+  }
+  
   .contact-section {
     padding: 8rem 2rem 4rem;
     background-color: #111;
