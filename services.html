@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services - Apex Performance</title>
+  <title>Our Services - Apex Performance</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -15,57 +15,67 @@
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="services.html" class="active">Services</a>
+      <a href="services.html">Services</a>
       <a href="testimonials.html">Testimonials</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section id="services" class="fade-scroll info-section">
-    <div class="container">
-      <h1 class="section-title">Our Services</h1>
-      <p class="section-intro">Explore our elite offerings designed to push your limits and elevate your performance. Whether you're a beginner or a pro athlete, there's a program for you.</p>
+  <section class="services-hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Our Services</h1>
+      <p>Elite training tailored to your journey. Choose your path to greatness.</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+  </section>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <img src="images/general-fitness.jpg" alt="General Fitness">
-          <h3>General Fitness</h3>
-          <p>Customized training sessions for all levels with nutritional guidance. Includes body fat tracking, weekly check-ins, and progress reviews.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="images/sports-performance.jpg" alt="Sports Performance">
-          <h3>Sports Performance Training</h3>
-          <p>Tailored plans for collegiate and pro athletes to maximize performance and meet specific athletic goals.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="images/team-training.jpg" alt="Athletic Team Training">
-          <h3>Athletic Team Training</h3>
-          <p>Off-season/in-season strength, SAQ (speed/agility/quickness), and mobility sessions tailored to team dynamics.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="images/12-week-program.jpg" alt="12 Week Program">
-          <h3>12 Week Training Program</h3>
-          <p>Structured strength & mobility training plan with 3–4 workouts/week, weekly check-ins, and consistent goal tracking.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="images/meal-plan.jpg" alt="Meal Plan">
-          <h3>Meal Plan</h3>
-          <p>Mix-and-match meals, recipes, supplements, macros, and daily intake goals to keep your diet on point.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="images/body-composition.jpg" alt="Body Composition Analysis">
-          <h3>Body Composition Analysis</h3>
-          <p>Accurate assessments of fat %, lean muscle, and key metrics to guide your fitness journey with precision.</p>
-        </div>
+  <section class="services-container">
+    <div class="service-card">
+      <img src="images/general-fitness.jpg" alt="General Fitness">
+      <div class="service-text">
+        <h3>General Fitness</h3>
+        <p>Individualized training focused on mobility, fat loss, and muscle gain — plus nutrition guidance and monthly progress tracking.</p>
       </div>
+    </div>
 
-      <div class="cta-container">
-        <a href="contact.html" class="btn cta-btn">Start Your Transformation</a>
+    <div class="service-card">
+      <img src="images/sports-performance.jpg" alt="Sports Performance">
+      <div class="service-text">
+        <h3>Sports Performance Training</h3>
+        <p>Customized programs for collegiate and professional athletes to push beyond their limits and hit peak performance.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/team-training.jpg" alt="Team Training">
+      <div class="service-text">
+        <h3>Athletic Team Training</h3>
+        <p>Off-season and in-season sport-specific programs with a focus on strength, agility, and mobility for teams of all levels.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/12-week.jpg" alt="12 Week Program">
+      <div class="service-text">
+        <h3>12 Week Training Program</h3>
+        <p>Step-by-step plan with 3-4 weekly sessions and mobility work, paired with weekly check-ins to guide your transformation.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/meal-plan.jpg" alt="Meal Plan">
+      <div class="service-text">
+        <h3>Meal Plan</h3>
+        <p>Choose from 15 mix-and-match meals, with macro targets, supplement recommendations, and daily calorie goals built in.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/body-comp.jpg" alt="Body Composition">
+      <div class="service-text">
+        <h3>Body Composition Analysis</h3>
+        <p>Track your true progress with body fat %, lean mass, and other key insights that drive sustainable results.</p>
       </div>
     </div>
   </section>
@@ -73,31 +83,5 @@
   <footer class="footer">
     <p>&copy; 2025 Apex Performance Training. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const faders = document.querySelectorAll('.fade-scroll');
-      const appearOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-      };
-
-      const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('fade-in');
-          observer.unobserve(entry.target);
-        });
-      }, appearOptions);
-
-      faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-      });
-
-      window.addEventListener('scroll', () => {
-        document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 50);
-      });
-    });
-  </script>
 </body>
 </html>
