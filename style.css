@@ -232,15 +232,26 @@ body {
   }
 
   .why-apex {
-    padding: 5rem 0; /* Removed side padding */
-    width: 100vw;
+    background-color: #000; /* black background */
+    color: #fff; /* white text */
+    padding: 5rem 0; /* remove side padding */
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1e1e1e; /* Dark modern look */
-    color: white;
+    width: 100%;
+    text-align: center;
 }
+.why-apex h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f7d0d2; /* matches your accent color */
+}
+
+.why-apex p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
   /* FAQ Section */
   .faq-section {
     background-color: #f8f8f8;
