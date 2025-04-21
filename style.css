@@ -302,6 +302,7 @@ body {
 }
 .contact-form input,
 .contact-form textarea {
+    color: white;
     display: block; /* Ensure the form elements are visible */
     visibility: visible; /* Ensure they are not hidden */
 }
