@@ -352,7 +352,6 @@ body {
     background-color: #e3bebe;
     cursor: pointer;
 }
-
 .about-section {
   padding: 6rem 2rem;
   background-color: #f9f9f9;
@@ -371,4 +370,35 @@ body {
   margin: 0 auto 2rem;
   font-size: 1.1rem;
   line-height: 1.8;
+}
+
+.coach-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.coach-card .em-logo {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.coach-card ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+.coach-card ul li {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.coach-card ul li strong {
+  color: #c42020;
 }
