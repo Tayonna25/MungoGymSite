@@ -352,3 +352,23 @@ body {
     background-color: #e3bebe;
     cursor: pointer;
 }
+
+.about-section {
+  padding: 6rem 2rem;
+  background-color: #f9f9f9;
+  color: #111;
+  text-align: center;
+}
+
+.about-section h1,
+.about-section h2 {
+  color: #c42020;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
