@@ -299,8 +299,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-     min-height: 100vh;
-  }
+    min-height: auto; /* or remove */
+    padding-top: 8rem; /* to offset fixed header */
+    padding-bottom: 4rem;
+}
+
+
   
 .contact-form input,
 .contact-form textarea {
