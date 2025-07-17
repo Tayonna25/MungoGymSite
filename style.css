@@ -292,20 +292,15 @@ body {
   }
   /* Contact Section */
   .contact-section {
-    padding: 8rem 2rem 4rem;
-    background-color: #111;
-    color: white; /* ✅ Set text color to white */
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: auto; /* or remove */
-    padding-top: 8rem; /* to offset fixed header */
-    padding-bottom: 4rem;
+  background-color: #111;
+  color: white;
+  min-height: 100vh; /* ✅ keep this */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 2rem 4rem; /* ✅ top padding to offset header */
 }
 
-
-  
 .contact-form input,
 .contact-form textarea {
     background-color: #333;
