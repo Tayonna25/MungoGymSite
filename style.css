@@ -381,67 +381,40 @@ body {
   line-height: 1.8;
 }
 
-.coach-card {
-  background: linear-gradient(to right, #1a1a1a, #2d2d2d);
-  padding: 3rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  max-width: 650px;
-  margin: 2rem auto;
-  color: #fff;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
+.coach-section {
+  background-color: #f4f4f4;
+  padding: 6rem 2rem;
+  text-align: center;
 }
 
-.logo-frame {
-  display: flex;
-  justify-content: center;
+.coach-container {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.coach-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.coach-container h3 {
+  font-size: 1.8rem;
   margin-bottom: 2rem;
+  color: #e94e3c;
 }
 
-.em-logo {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  border-radius: 50%;
-  border: 4px solid #f7d0d2;
-  padding: 0.5rem;
-  background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.coach-card ul {
+.coach-info {
   list-style: none;
   padding: 0;
+  text-align: left;
+  color: #333;
   font-size: 1.1rem;
 }
 
-.coach-card ul li {
+.coach-info li {
   margin-bottom: 1rem;
-  line-height: 1.6;
-  border-left: 4px solid #c42020;
-  padding-left: 1rem;
-  transition: transform 0.2s ease;
-}
-
-.coach-card ul li:hover {
-  transform: translateX(5px);
-}
-
-.coach-card ul li strong {
-  color: #f7d0d2;
 }
 
 
-.nav a:focus,
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form button:focus {
-    outline: 3px solid #c42020;
-    outline-offset: 2px;
-}
-
-.coach-card ul li:hover {
-  transform: translateX(5px);
-}
