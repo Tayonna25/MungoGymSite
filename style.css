@@ -295,7 +295,7 @@ body {
   background-color: #111;
   color: white;
   min-height: 100vh; /* ✅ keep this */
-  display: flex;
+  display: center;
   justify-content: center;
   align-items: center;
   padding: 8rem 2rem 4rem; /* ✅ top padding to offset header */
